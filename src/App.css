@@ -1,38 +1,120 @@
-.App {
+.EsterEgg {
+  color: transparent;
+}
+
+html {
+  background-image: linear-gradient(to left, #121218, #150f1b);
+}
+
+* {
+  transition: 1s;
+  border-radius: 0px;
+  box-shadow: 0px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#Habilidades {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#Habilidades > img {
+  padding: 1%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#Sobre-Min {
+  width: 50%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#Sobre-Min > p {
+  text-align: center;
+  font-size: 120%;
+  font-family: cursive;
+  color: #00ff7f;
+}
+#Sobre-Min > p:hover {
+  text-shadow: 0px 0px 10px #00ff7f;
+}
+#Sobre-Min h2 {
+  color: #FDA50F;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 170%;
+  margin: 1%;
+}
+#Sobre-Min h2:hover {
+  text-shadow: 0px 0px 10px #FDA50F;
+}
+
+#Perfil {
+  display: inline-block;
+  border: 1px solid #0000ff;
+  box-shadow: 0px 0px 50px #0000ff;
+  width: 150px;
+  background-color: #191920;
+  border-radius: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position-x: center;
+  background-attachment: scroll;
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: Moved 1.5s alternate-reverse infinite;
+  transition: 300ms;
+  background-image: url("Imagens/RinOkumura.gif");
+}
+#Perfil:hover {
+  width: 160px;
+  height: 160px;
+}
+
+#Contate-me {
+  text-align: center;
+}
+#Contate-me > a > img:hover {
+  width: 5%;
+}
+
+@keyframes Moved {
+  0% {
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  #Perfil {
+    background-color: red;
+    top: -20%;
   }
-  to {
-    transform: rotate(360deg);
+  #Sobre-Min {
+    width: 100%;
   }
 }
+@media screen and (max-height: 568px) {
+  * {
+    font-size: 90%;
+  }
+  #Perfil {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-height: 200px) and (max-width: 200px) {
+  #Perfil {
+    visibility: hidden;
+  }
+  #Sobre-Min {
+    visibility: hidden;
+  }
+  #Habilidades {
+    visibility: visible;
+  }
+}/*# sourceMappingURL=App.css.map */
