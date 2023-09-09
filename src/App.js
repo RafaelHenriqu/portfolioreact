@@ -1,4 +1,5 @@
- import './App.css';
+import { BiDollar } from "react-icons/bi";
+import './App.css';
 import Configs from './Components/Configs';
 import Css from './Imagens/Css.png';
 import Gmail from './Imagens/Gmail.png';
@@ -7,6 +8,7 @@ import js from './Imagens/Js.png';
 import Node from './Imagens/Node.png';
 import React from './Imagens/React.png';
 import Scss from './Imagens/Sass.png';
+
 let Hora = new Date().getHours()
 
 function App() {
@@ -37,7 +39,7 @@ function App() {
     </div>
 
     <h2>Projetos</h2>
- 
+    <a target="_blank"  href='https://rafaelhenriqu.github.io/Money-Conveter/'  ><p className="Project" title="Money-Conveter"><BiDollar/></p></a>
     <h2  >Contate-me</h2>
     <div id='Contate-me'>
     <a href="mailto:girafaeoficial@gmail.com?subject=Desenvolvedor Web&body=Olá Gostaria de le contratar"><img src={Gmail}></img></a>
