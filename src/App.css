@@ -13,6 +13,10 @@ html {
   border: 0px;
   margin: 0px;
   padding: 0px;
+  min-width: 0px;
+  min-height: 0px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .Project {
@@ -29,10 +33,13 @@ html {
 }
 #Habilidades > img {
   padding: 1%;
+  min-width: 5%;
 }
 
 #Sobre-Min {
   width: 50%;
+  min-width: 0px;
+  min-height: 0px;
   position: absolute;
   top: 60%;
   left: 50%;
