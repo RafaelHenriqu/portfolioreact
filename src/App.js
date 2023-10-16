@@ -1,4 +1,4 @@
-import { BiDollar } from "react-icons/bi";
+import { BiAlarm, BiDollar } from "react-icons/bi";
 import './App.css';
 import Configs from './Components/Configs';
 import Css from './Imagens/Css.png';
@@ -38,8 +38,12 @@ function App() {
     
     </div>
 
-    <h2>Projetos</h2>
-    <a target="_blank"  href='https://rafaelhenriqu.github.io/Money-Conveter/'  ><p className="Project" title="Money-Conveter"><BiDollar/></p></a>
+    <h2>Projetos</h2> 
+    <section id="ProjectsUrl">
+    <a target="_blank"  href='https://rafaelhenriqu.github.io/Money-Conveter/' rel="noreferrer"><p className="Project" title="Money-Conveter"><BiDollar/></p></a>
+    <a target="_blank"  href='https://rafaelhenriqu.github.io/Time-now/' rel="noreferrer"  ><p className="Project" title="Time-Now"><BiAlarm/></p></a>
+    </section>
+<br></br>
     <h2  >Contate-me</h2>
     <div id='Contate-me'>
     <a href="mailto:girafaeoficial@gmail.com?subject=Desenvolvedor Web&body=Olá Gostaria de le contratar"><img src={Gmail}></img></a>

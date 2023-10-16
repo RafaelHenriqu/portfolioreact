@@ -6,6 +6,12 @@ html {
   background-image: linear-gradient(to left, #121218, #150f1b);
 }
 
+#ProjectsUrl {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
 * {
   transition: 1s;
   border-radius: 0px;
@@ -24,8 +30,8 @@ html {
   letter-spacing: 2px;
   text-align: center;
   font-size: 170%;
-  margin: 1%;
   color: green;
+  display: inline;
 }
 
 #Habilidades {

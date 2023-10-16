@@ -8,10 +8,19 @@ html{
     background-image: linear-gradient(to left,$Primary, #150f1b);
 }
 
- 
 
-*{
-    
+
+#ProjectsUrl{    
+    position: absolute;
+    width: 100%;
+
+    text-align: center;
+
+
+
+}
+ 
+*{    
     transition: 1s;
     border-radius: 0px;
     box-shadow: 0px;
@@ -27,14 +36,16 @@ html{
 }
 
 .Project{
+    
     font-family:   Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 2px;
     text-align: center;
     font-size: 170%;
-    margin: 1%;
-    color: green;
-}
 
+    color: green;
+    display: inline;
+    
+}
 #Habilidades{ 
 
     text-align: center;
