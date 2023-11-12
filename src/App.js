@@ -8,7 +8,7 @@ import js from './Imagens/Js.png';
 import Node from './Imagens/Node.png';
 import React from './Imagens/React.png';
 import Scss from './Imagens/Sass.png';
-
+import WhatsApp_Icon from './Imagens/WhatsApp-icon.png';
 let Hora = new Date().getHours()
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
     <h2>Habilidades</h2>
     <div id='Habilidades'>
       
+   
     <img src={HTML} title='HTML'></img>
     <img src={js} title='JavaScript'></img>
     <img src={React} title='React'></img>
@@ -49,6 +50,7 @@ function App() {
     <h2  >Contate-me</h2>
     <div id='Contate-me'>
     <a href="mailto:girafaeoficial@gmail.com?subject=Desenvolvedor Web&body=Olá Gostaria de le contratar"><img src={Gmail}></img></a>
+    <a href="https://wa.link/9mzl50" target="_blank"><img src={WhatsApp_Icon} id="What"></img></a>
     </div>
    </section>
  
